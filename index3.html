@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+@keyframes heading
+{
+	0% {top:50px;}
+	100% {top:20px;}
+	
+}
+@keyframes quote
+{
+	0% {top:70px}
+	100% {top: 50px}
+}
+@keyframes button
+{
+	from {opacity: 0}
+	to {opacity: 1}
+}
+.button
+{
+	background-color: white;
+	color: black;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.button1
+{
+	background-color: white;
+	color: black;
+	border: 1px solid white;
+	position: relative;
+    top : 55px;
+	right: 0px;
+	border-radius: 30px 7px;
+	display:block;
+    margin: auto;
+  	opacity: 0;
+	animation-name: button;
+	animation-duration: 0.5s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+.button1:hover
+{
+	background-color: black;
+	color: white;
+}
+.button2
+{
+	background-color: white;
+	color: black;
+	border: 1px solid white;
+	position: relative;
+    top : 65px;
+	left: 0px;
+	border-radius: 30px 7px;
+	display:block;
+    margin: auto;
+	opacity: 0;
+	animation-name: button;
+	animation-duration: 0.5s;
+	animation-delay: 2.3s;
+	animation-fill-mode: forwards;
+}
+.button2:hover
+{
+	background-color: black;
+	color: white;
+}
+.button3
+{
+	background-color: white;
+	color: black;
+	border: 1px solid white;
+	position: relative;
+  top : 75px;
+	left: 0px;
+	border-radius: 30px 7px;
+	display:block;
+  margin: auto;
+	opacity: 0;
+	animation-name: button;
+	animation-duration: 0.5s;
+	animation-delay: 2.6s;
+	animation-fill-mode: forwards;
+}
+.button3:hover
+{
+	background-color: black;
+	color: white;
+}@font-face 
+{
+	font-family: beatsurge;
+	src: url(neutronium.ttf);
+}
+p.border 
+{
+	border-style: solid;
+	border-width: 2px;
+	padding: 20px;
+	position: absolute;
+	border-radius: 50px 20px;
+	position: absolute;
+}
+body
+{
+	background: url("background.jpg") no-repeat fixed right;
+	background-repeat:repeat;
+	margin: auto;
+	max-width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    
+}
+h1
+{
+    color: white;
+    font-family: beatsurge;
+	font-size: 100px;
+	text-align: center;
+    top: 20px;
+	left: 0px;
+	position: relative;
+    animation-name: heading;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+	transition: 0.5s;	
+}
+p
+{
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 50px;
+	left: 0px;
+	animation-name: quote;
+	animation-duration: 1s;
+	animation-delay: 1.25s;
+	animation-fill-mode: backwards;
+	transition: 0.5s;
+}
+</style>
+<title >Beat Surge</title>
+</head>
+<body>
+<div><h1 id="title" >BEAT SURGE</h1></div>
+<p id="tagl">
+Where words fail, music speaks.
+</p>
+<button id="button1" onclick="location.href = 'remixm.html'" class = "button button1">Remixes</button>
+<button id="button2" onclick="location.href = 'ocm.html'" class = "button button2">Original Content</button>
+<button id="button3" onclick="location.href = 'creditsm.html'" class = "button button3">About Us</button>
+<script>
+
+</script>
+</body>
+</html>

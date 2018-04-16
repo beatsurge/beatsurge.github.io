@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+@keyframes heading
+{
+	0% {top:300px;}
+	100% {top:270px;}
+	
+}
+@keyframes quote
+{
+	0% {top:250px}
+	100% {top: 210px}
+}
+@keyframes button
+{
+	from {opacity: 0}
+	to {opacity: 1}
+}
+.modal1 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    }
+    .modal2 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    }
+    .modal3 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    }
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 24rem;
+        border-radius: 0.5rem;
+    }
+    .close-button1 {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
+    .close-button2 {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
+    .close-button3 {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
+    .close-button:hover {
+        background-color: darkgray;
+    }
+    .show-modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+.button
+{
+	background-color: white;
+	color: black;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.button1
+{
+	background-color: white;
+	color: black;
+	border: 1px solid white;
+	position: relative;
+    top : 220px;
+	right: 180px;
+	border-radius: 30px 7px;
+	display:block;
+    margin: auto;
+  	opacity: 0;
+	animation-name: button;
+	animation-duration: 0.5s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+.button1:hover
+{
+	background-color: black;
+	color: white;
+}
+.button2
+{
+	background-color: white;
+	color: black;
+	border: 1px solid white;
+	position: relative;
+    top : 165px;
+	left: 0px;
+	border-radius: 30px 7px;
+	display:block;
+    margin: auto;
+	opacity: 0;
+	animation-name: button;
+	animation-duration: 0.5s;
+	animation-delay: 2.3s;
+	animation-fill-mode: forwards;
+}
+.button2:hover
+{
+	background-color: black;
+	color: white;
+}
+.button3
+{
+	background-color: white;
+	color: black;
+	border: 1px solid white;
+	position: relative;
+  top : 110px;
+	left: 180px;
+	border-radius: 30px 7px;
+	display:block;
+  margin: auto;
+	opacity: 0;
+	animation-name: button;
+	animation-duration: 0.5s;
+	animation-delay: 2.6s;
+	animation-fill-mode: forwards;
+}
+.button3:hover
+{
+	background-color: black;
+	color: white;
+}
+@font-face 
+{
+	font-family: beatsurge;
+	src: url(neutronium.ttf);
+}
+@font-face 
+{
+	font-family: custom;
+	src: url(normal1.ttf);
+}
+p.border 
+{
+	border-style: solid;
+	border-width: 2px;
+	padding: 20px;
+	position: absolute;
+	border-radius: 50px 20px;
+	position: absolute;
+}
+body
+{
+	background: url("background.jpg") no-repeat fixed center;
+	margin: auto;
+	max-width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    
+}
+h1
+{
+    color: white;
+    font-family: beatsurge;
+	font-size: 100px;
+	text-align: center;
+    top: 270px;
+	left: 0px;
+	position: relative;
+    animation-name: heading;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+	transition: 0.5s;	
+}
+h2
+{
+    font-family: custom;
+    text-align: center;
+}
+p
+{
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 210px;
+	left: 0px;
+	animation-name: quote;
+	animation-duration: 1s;
+	animation-delay: 1.25s;
+	animation-fill-mode: backwards;
+	transition: 0.5s;
+}
+.p1
+{
+	font-family: custom;
+}
+.ad
+{
+	position: relative;
+	top:41vh;
+    left: 0vw;
+}
+</style>
+<title >Beat Surge</title>
+</head>
+<body>
+<div><h1 id="title" >BEAT SURGE</h1></div>
+<p id="tagl">
+Where words fail, music speaks.
+</p>
+<button id="button1" onclick="movebutton()" class = "button button1 trigger1">Remixes</button>
+<div class="modal1">
+        <div class="modal-content">
+            <span class="close-button1">&times;</span>
+            <h2>Remixes</h2>
+            <p1>Faded by Alan Walker:<br/><br/><audio controls>
+  <source src="faded.mpeg" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</p1>
+        </div>
+    </div>
+<button id="button2" onclick="movebutton1()" class = "button button2 trigger2">Original Content</button>
+<div class="modal2">
+        <div class="modal-content">
+            <span class="close-button2">&times;</span>
+            <h2>Original Content</h2>
+            <p1>Content to be added.</p1>
+        </div>
+    </div>
+<button id="button3" onclick="movebutton2()" class = "button button3 trigger3">About Us</button>
+<div class="modal3">
+        <div class="modal-content">
+            <span class="close-button3">&times;</span>
+            <h2>People who made the page exist</h2>
+            <p1><img src="me.png" width="100" height="100"><br/> <b>Baunes Padhy aka PseudoDev.</b><br/><br/>Developed the website. Everything that you see here is done by him. Hobbies include playing guitar, and "Petting" Baby Feline Species. C Enthusisast.<br/></p1>
+            <p1><br/><img src="lama.png" width="100" height="100"><br/><b>Rohan Ray aka Llama</b><br/><br/>Is a Very Vey Agressive Llama. Major Contribution in reviewing and giving out Suggestions for improvement. Pretty callous by nature, his hobbies include brutally torturing random people and Petting Fat Cats..</p1>
+
+        </div>
+    </div>
+<div class="ad" align="center"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- first -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-8114594705929246"
+     data-ad-slot="2085686335"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<script>
+
+function movebutton() {
+
+        document.getElementById("button1").style.top = "-19vh";
+        document.getElementById("button1").style.right = "0px";
+        document.getElementById("button2").style.top = "-29vh";
+        document.getElementById("button2").style.left = "-410px";
+        document.getElementById("button3").style.top = "-35vh";
+        document.getElementById("button3").style.left = "385px";
+        document.getElementById("tagl").style.top = "5000px";
+        document.getElementById("title").style.top = "-75px";
+        document.getElementById("title").style.left = "0px";
+        modal1.classList.toggle("show-modal");
+
+
+    }
+function movebutton1() {
+
+        document.getElementById("button1").style.top = "-24vh";
+        document.getElementById("button1").style.right = "380px";
+        document.getElementById("button2").style.top = "-23vh";
+        document.getElementById("button2").style.left = "0px";
+        document.getElementById("button3").style.top = "-35vh";
+        document.getElementById("button3").style.left = "385px";
+        document.getElementById("tagl").style.top = "5000px";
+        document.getElementById("title").style.top = "-75px";
+        document.getElementById("title").style.left = "0px";
+        modal2.classList.toggle("show-modal");
+    }
+ function movebutton2() {
+        document.getElementById("button1").style.top = "-24vh";
+        document.getElementById("button1").style.right = "-380px";
+        document.getElementById("button2").style.top = "-29vh";
+        document.getElementById("button2").style.left = "-410px";
+        document.getElementById("button3").style.top = "-28vh";
+        document.getElementById("button3").style.left = "0px";
+        document.getElementById("tagl").style.top = "5000px";
+        document.getElementById("title").style.top = "-75px";
+        document.getElementById("title").style.left = "0px";
+        modal3.classList.toggle("show-modal");
+    }
+    var modal1 = document.querySelector(".modal1");
+    var modal2 = document.querySelector(".modal2");
+    var modal3 = document.querySelector(".modal3");    
+    var closeButton1 = document.querySelector(".close-button1");
+    var closeButton2 = document.querySelector(".close-button2");
+    var closeButton3 = document.querySelector(".close-button3");
+    closeButton1.addEventListener("click", movebutton);
+    closeButton2.addEventListener("click", movebutton1);
+    closeButton3.addEventListener("click", movebutton2);
+    window.addEventListener("click", windowOnClick);
+</script>
+</body>
+</html>
