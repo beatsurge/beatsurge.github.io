@@ -26,8 +26,8 @@
 	position: relative;
 	border-radius: 100px 1000px;
 	transition: 0.5s;
-	top: 50vh;
-	left: 35vw;
+    display:block;
+    margin: 0 auto;
 }
 h1
 {
@@ -44,6 +44,7 @@ body
 	background-image: url(remix.jpg);
 }
 </style>
+<body>
 <head>
 	<title>Remixes</title>
     <h1>Remixes:</h1>
@@ -58,6 +59,7 @@ Your browser does not support the audio element.
 </audio></p>
 <button class="button" onclick="location.href = 'index3.html'">Home</button>
 </head>
+</body>
 <script>
 	document.addEventListener('play', function(e){
     var audios = document.getElementsByTagName('audio');
